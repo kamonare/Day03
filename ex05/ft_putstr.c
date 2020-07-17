@@ -6,13 +6,25 @@
 /*   By: kamonare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 16:10:57 by kamonare          #+#    #+#             */
-/*   Updated: 2020/07/08 16:17:10 by kamonare         ###   ########.fr       */
+/*   Updated: 2020/07/17 12:24:33 by kamonare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putstr(char *str);
+void putchar(void)
 {
 	write(1, &c, 1);
+}
+
+void putstr(void)
+{
+	int i;
+	i = 0;
+	while(str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	ft_putchar('/n');
 }
